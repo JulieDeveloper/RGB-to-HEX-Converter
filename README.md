@@ -1,6 +1,6 @@
 # RGB-to-HEX-Converter  
-- A project allowed user converting RGB and HEX color code by controling the slider bar.
-- It's simply built with **HTML, CSS, vanilla JS**   
+this is a fun project I built in the early days when I just start learning DOM manipulation. It allows users interactivly converting RGB and HEX color by controling the slider bar.
+The project was simply built with **HTML, CSS, vanilla JS**   
 
 
 
