@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family:font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Mono', monospace;
+  margin:50px;
+}
+
+main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  
+}
+
+.rgb-section {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+/* 主體樣式 */
+input[type="range"] {
+  height: 30px;
+  width: 180px;
+  overflow: hidden;
+  cursor: pointer; /* 滑鼠放上會改變鼠標樣式 */
+  outline: none; /* 取消底線效果 */
+  margin: 3px 10px 0;
+}
+
+/* 滑動軌道 樣式 */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 7px;
+  width: 180px;
+  border-radius: 4px;
+  background: rgba(153, 153, 153, 0.6);
+  border-top: 2px solid #666666;
+  border-left: 2px solid #666666;
+}
+
+/* 滑動鈕 樣式 */
+input[type="range"]::-webkit-slider-thumb {
+ position: relative;
+  height: 18px;
+  width: 10px;
+  margin-top: -7px;             
+  background-color:#999999;
+  border-radius: 6px;
+  border-right: 2px solid #666666;
+  border-bottom: 2px solid #666666;
+}
+
+.rgb-red,
+.rgb-green,
+.rgb-blue {
+  display: flex;
+  align-items: center;
+  margin-bottom:30px;
+}
+
+label{
+  width:50px;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:8px;
+  font-size:24px;
+}
+label.value-red,.value-green,.value-blue{
+  width:70px;
+  height:30px;
+}
+
+
+
+
+label[for=title-red],label[for=value-red]{
+  background:rgba(255,0,0,0.9);
+}
+label[for=title-green],label[for=value-green]{
+  background:rgba(0,255,0,0.9);
+}
+label[for=title-blue],label[for=value-blue]{
+  background:rgba(0,0,255,0.9);
+}
+
+
+.hex-background{
+  width:320px;
+  height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:5px;
+  background-color:rgba(153, 153, 153, 0.4)
+}  
+
+.hex-value{
+  font-size:65px;
+  color: black;
+}
